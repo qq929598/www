@@ -1,0 +1,63 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+}
+
+.navBox {
+    width: 1200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 30px auto;
+    background: orange;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.navBox span {
+    color: white;
+    margin-right: 10px;
+}
+
+.navBox a {
+    color: white;
+    margin-right: 15px;
+    position: relative;
+}
+
+.navBox a:hover {
+    color: red;
+}
+
+.cardBox {
+    width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardBox li {
+    width: 24%;
+    margin: 0 .5% 10px .5%;
+    box-sizing: border-box;
+    padding: 10px;
+    background: white;
+}
+
+.cardBox li img {
+    display: block;
+    width: 100%;
+}
+
+.cardBox li span {
+    display: block;
+    margin-bottom: 5px;
+    /* color: orangered; */
+    font-size: 18px;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
