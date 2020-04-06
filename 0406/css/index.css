@@ -5,59 +5,60 @@ body {
     background: #f4f4f4;
 }
 
-.navBox {
+.md {
     width: 1200px;
+    margin: 0 auto;
+}
+
+.navBox {
     height: 40px;
     line-height: 40px;
     margin: 30px auto;
-    background: orange;
+    background: #f40;
     box-sizing: border-box;
     padding: 0 10px;
     font-size: 16px;
 }
 
 .navBox span {
-    color: white;
+    color: #fff;
     margin-right: 10px;
 }
 
 .navBox a {
-    color: white;
+    color: #fff;
     margin-right: 15px;
     position: relative;
 }
 
 .navBox a:hover {
-    color: red;
+    color: #333;
 }
 
 .cardBox {
-    width: 1200px;
-    margin: 20px auto;
+    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 .cardBox li {
-    width: 24%;
+    width: 19%;
     margin: 0 .5% 10px .5%;
     box-sizing: border-box;
     padding: 10px;
-    background: white;
-}
-
-.cardBox li img {
-    display: block;
-    width: 100%;
+    background: #fff;
 }
 
 .cardBox li span {
     display: block;
     margin-bottom: 5px;
-    /* color: orangered; */
     font-size: 18px;
     margin-left: 10px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+.cardBox li img{
+    display: block;
+    width: 100%;
 }
