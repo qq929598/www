@@ -1,0 +1,45 @@
+html,body{
+    background: #f3f3f3;
+}
+.container{
+    box-sizing: border-box;
+    margin: 20px auto;
+    width: 760px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container .column{
+    box-sizing: border-box;
+    width: 240px;
+}
+
+.card{
+    margin-bottom: 10px;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 1px 1px 10px 0 #999;
+}
+
+.card a{
+    display: block;
+}
+
+.card a .imgBox{
+    background: url("../images/default.gif") no-repeat center center #f4f4f4;
+    overflow: hidden;
+}
+
+.card a .imgBox img{
+    width: 100%;
+    opacity: 0;
+    transition: opacity .6s ease;
+}
+
+.card a p{
+    margin-top: 5px;
+    color: #000;
+    font-size: 12px;
+    line-height: 20px;
+}
