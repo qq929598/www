@@ -43,7 +43,7 @@ let flexModule = (function () {
                 card.className = "card";
                 card.innerHTML = `<a href="${link}">
                                     <div class="imgBox" style="height:${height}px">
-                                        <img src="" alt="" data-image="${pic}">
+                                        <img src = "${pic}" alt = "">
                                     </div>
                                     <p>${title}</p>
                                 </a>`;
@@ -68,14 +68,14 @@ let flexModule = (function () {
     };
     let lazyImg = function lazyImg(imgBox) {
         let img = imgBox.querySelector('img'),
-            dataImage = img.getAttribute('data-image'),
+            dataImage = img.getAttribute('src'),
             tempImage = new Image;
         tempImage.src = dataImage;
         tempImage.onload = () => {
             img.src = dataImage;
             css(img, 'opacity', 1);
         };
-        img.removeAttribute('data-image');
+        img.removeAttribute('src');
         tempImage = null;
         imgBox.setAttribute('isLoad', 'true');
     };
